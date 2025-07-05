@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etMedicineName"
+        android:hint="Medicine Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginTop="8dp"
+/>
+
+    <Button
+        android:id="@+id/btnAddMedicine"
+        android:text="Add Medicine"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnViewMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Medicines"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listViewMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
